@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity
                 _id = _idEditText.getText().toString();
                 _password = _passwordEditText.getText().toString();
 
-                _url = "http://tonywijaya.000webhostapp.com/011100862/login.php?id=" + "&password" + _password;
+                _url = "http://stmikpontianak.net/011100862/login.php?id=" + "&password" + _password;
 
                 asyncHttpClient = new AsyncHttpClient();
                 asyncHttpClient.get(_url, new AsyncHttpResponseHandler() {
