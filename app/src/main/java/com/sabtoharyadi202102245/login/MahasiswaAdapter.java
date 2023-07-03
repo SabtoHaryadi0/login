@@ -14,14 +14,11 @@ public class MahasiswaAdapter extends RecyclerView.Adapter<MahasiswaViewHolder> 
 
     private Activity _activity;
 
-    private List<MahasiswaModel> _mahasiswaModelList;
+    private final List<MahasiswaModel> _mahasiswaModelList;
 
-    public MahasiswaAdapter(Activity _activity) {
-        this._activity = _activity;
-    }
-
-    public MahasiswaAdapter(List<MahasiswaModel> mahasiswaModelList)
+    public MahasiswaAdapter(Activity activity, List<MahasiswaModel> mahasiswaModelList)
     {
+        this._activity = activity;
         this._mahasiswaModelList = mahasiswaModelList;
     }
 

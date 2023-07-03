@@ -26,11 +26,11 @@ public class TampilMahasiswaActivity extends AppCompatActivity
     private FloatingActionButton _addButton;
     private RecyclerView _recyclerView1;
 
-    @SuppressLint("MissingInflatedId")
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_tampil_mahasiswa);
 
         _recyclerView1 = findViewById(R.id.recyclerView1);
 
@@ -52,7 +52,8 @@ public class TampilMahasiswaActivity extends AppCompatActivity
                 RecyclerView.LayoutManager lm = new LinearLayoutManager(TampilMahasiswaActivity.this);
                 _recyclerView1.setLayoutManager(lm);
 
-                MahasiswaAdapter ma = new MahasiswaAdapter(mahasiswaModelList);
+
+                MahasiswaAdapter ma = new MahasiswaAdapter(TampilMahasiswaActivity.this, mahasiswaModelList);
                 _recyclerView1.setAdapter(ma);
             }
 
