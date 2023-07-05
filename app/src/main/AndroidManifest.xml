@@ -9,22 +9,26 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="App Login Sabto Haryadi"
         android:supportsRtl="true"
         android:theme="@style/Theme.Login"
         tools:targetApi="31">
         <activity
-            android:name=".TambahMahasiswaActivity"
-            android:label="Tambah Mahasiswa"
+            android:name=".ForexMainActivity"
+            android:label="Forex Sabto Haryadi"
             android:exported="false" />
+        <activity
+            android:name=".TambahMahasiswaActivity"
+            android:exported="false"
+            android:label="Tambah Mahasiswa" />
         <activity
             android:name=".TampilMahasiswaActivity"
-            android:label="Mahasiswa"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Mahasiswa" />
         <activity
             android:name=".MenuActivity"
-            android:label="Menu"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Menu" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
