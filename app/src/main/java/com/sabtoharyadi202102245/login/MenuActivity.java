@@ -20,7 +20,7 @@ public class MenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
-        _tampilMahasiswaButton = findViewById(R.id);
+        _tampilMahasiswaButton = findViewById(R.id.tampilMahasiswaButton);
 
         _tampilMahasiswaButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,7 +28,7 @@ public class MenuActivity extends AppCompatActivity {
                 _tampilMahasiswaIntent = new Intent(getApplicationContext(), TampilMahasiswaActivity.class );
                 startActivity(_tampilMahasiswaIntent);
             }
-    }
+    });}
 
 
 }
